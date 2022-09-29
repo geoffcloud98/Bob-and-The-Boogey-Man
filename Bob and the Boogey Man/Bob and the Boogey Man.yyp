@@ -1,21 +1,28 @@
 {
   "resources": [
+    {"id":{"name":"spr_street","path":"sprites/spr_street/spr_street.yy",},"order":2,},
+    {"id":{"name":"spr_sky","path":"sprites/spr_sky/spr_sky.yy",},"order":3,},
     {"id":{"name":"snd_testPush","path":"sounds/snd_testPush/snd_testPush.yy",},"order":0,},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
+    {"id":{"name":"spr_titlescreen","path":"sprites/spr_titlescreen/spr_titlescreen.yy",},"order":4,},
+    {"id":{"name":"obj_Bob","path":"objects/obj_Bob/obj_Bob.yy",},"order":0,},
+    {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},"order":1,},
+    {"id":{"name":"spr_Bob","path":"sprites/spr_Bob/spr_Bob.yy",},"order":0,},
+    {"id":{"name":"spr_buildings","path":"sprites/spr_buildings/spr_buildings.yy",},"order":1,},
+    {"id":{"name":"room_start","path":"rooms/room_start/room_start.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Main","path":"options/main/options_main.yy",},
     {"name":"Windows","path":"options/windows/options_windows.yy",},
     {"name":"operagx","path":"options/operagx/options_operagx.yy",},
   ],
-  "defaultScriptType": 0,
+  "defaultScriptType": 1,
   "isEcma": false,
   "configs": {
     "name": "Default",
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"room_start","path":"rooms/room_start/room_start.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

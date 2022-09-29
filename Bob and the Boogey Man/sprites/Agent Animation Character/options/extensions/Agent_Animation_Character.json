@@ -1,0 +1,9 @@
+{
+  "extensionId": {
+    "name": "Agent_Animation_Character",
+    "path": "extensions/Agent_Animation_Character/Agent_Animation_Character.yy"
+  },
+  "resourceVersion": "1.0",
+  "resourceType": "GMExtensionConfigSet",
+  "configurables": null
+}
