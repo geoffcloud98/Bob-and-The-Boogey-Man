@@ -5,6 +5,7 @@
     {"id":{"name":"snd_testPush","path":"sounds/snd_testPush/snd_testPush.yy",},"order":0,},
     {"id":{"name":"spr_titlescreen","path":"sprites/spr_titlescreen/spr_titlescreen.yy",},"order":4,},
     {"id":{"name":"obj_Bob","path":"objects/obj_Bob/obj_Bob.yy",},"order":0,},
+    {"id":{"name":"room_gameplay","path":"rooms/room_gameplay/room_gameplay.yy",},"order":1,},
     {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},"order":1,},
     {"id":{"name":"spr_Bob","path":"sprites/spr_Bob/spr_Bob.yy",},"order":0,},
     {"id":{"name":"spr_buildings","path":"sprites/spr_buildings/spr_buildings.yy",},"order":1,},
@@ -23,6 +24,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"room_start","path":"rooms/room_start/room_start.yy",},},
+    {"roomId":{"name":"room_gameplay","path":"rooms/room_gameplay/room_gameplay.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
