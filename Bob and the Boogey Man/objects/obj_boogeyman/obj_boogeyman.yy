@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_Bob",
-    "path": "sprites/spr_Bob/spr_Bob.yy",
+    "name": "spr_Boogeyman",
+    "path": "sprites/spr_Boogeyman/spr_Boogeyman.yy",
   },
   "solid": false,
   "visible": true,
@@ -32,7 +32,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_Bob",
+  "name": "obj_Boogeyman",
   "tags": [],
   "resourceType": "GMObject",
 }
