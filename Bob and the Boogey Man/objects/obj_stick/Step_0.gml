@@ -7,3 +7,4 @@ if(instance_exists(obj_Bob)) {
 image_xscale = obj_Bob.image_xscale;
 
 
+
