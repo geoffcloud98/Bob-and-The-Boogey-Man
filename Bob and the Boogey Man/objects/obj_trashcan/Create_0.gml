@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
-cursed = false
+event_inherited();
+
+polygon = polygon_from_instance(id);
+//cursed = false
 
 
 
