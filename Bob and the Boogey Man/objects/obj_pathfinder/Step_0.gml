@@ -9,11 +9,12 @@ if(direction >= 270 and direction <= 360) {
 //face left
 if (direction > 90 and direction <= 180) {
 	image_xscale = -1;
-}
+}//face left
 if(direction > 180 and direction < 270) {
 	image_xscale = -1;	
 }
 
+/*
 if(mouse_check_button_pressed(mb_left)) {
 	if(instance_exists(obj_goal)) {
 		instance_destroy(obj_goal);
@@ -30,13 +31,13 @@ if(mouse_check_button_pressed(mb_left)) {
 	path_start(my_path, 2, path_action_stop, true);
 }
 
-
+*/
 //WARNING: in order to test pathfinding methods, make sure only one pathfinding method is being executed
 //at runtime
 
 
 /*
-//mp linear step makes the object move in a linear line straight to 
+//mp linear step makes the object move in a linear line straight to  
 //the goal w/o avoiding obstacles
 if(instance_exists(obj_goal)) {
 	mp_linear_step(obj_goal.x, obj_goal.y, 2, false);
@@ -49,4 +50,4 @@ if(instance_exists(obj_goal)) {
 }
 */
 
-show_debug_message(hspeed);
+ 
