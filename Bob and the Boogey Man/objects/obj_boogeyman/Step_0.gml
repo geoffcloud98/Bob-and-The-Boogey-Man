@@ -1,37 +1,54 @@
-//face right
-if (direction >= 0 and direction <= 90) {
-	image_xscale = 1;
-}
-//face right
-if(direction >= 270 and direction <= 360) {
-	image_xscale = 1;
-}
-//face left
-if (direction > 90 and direction <= 180) {
-	image_xscale = -1;
-}//face left
-if(direction > 180 and direction < 270) {
-	image_xscale = -1;	
-}
 
-//If a goal exists
-if(instance_exists(obj_goal)) {
-	//if boogeyman reaches goal, destroy it
-	if(instance_place(x, y, obj_goal)) {
-		instance_destroy(obj_goal);	
+//if trashcan exists
+var obj_tobeCursed = noone;
+if(instance_exists(obj_trashcan)) {
+	//hold id of the closest obj_trashcan
+	var obj_tobeCursed = instance_nearest(x, y, obj_trashcan);
+	//if closest obj is within curse range and is not cursed
+	if(distance_to_object(obj_tobeCursed) < curse_range and obj_tobeCursed.cursed == false) {
+		cursing = true;
+	} else {
+		cursing = false;
 	}
 }
-//if goal does not exist, create one
-if (!instance_exists(obj_goal)) {
-	instance_create_layer(x, y, "Instances", obj_goal);
-}
-//look up mp_potential_paths in GM documentation for info about the arguments
-//for the factor argument, the larger the number, the more path ideas the obj can create
+
+//if boogeyman is cursing, go to a random obj and curse it
+if(cursing) {
+	//path variable for boogeyman
+	var curse_path = path_add();
+	//make potential paths to the obj to be cursed
+	mp_potential_path_object(curse_path, obj_tobeCursed.x, obj_tobeCursed.y, 0.5, 4, obj_wall);
+	//start best path to take
+	path_start(curse_path,hspd, path_action_stop,true);
 	
-//path variable for obj_pathfinder
-var my_path = path_add();
-//generates potential paths to take based on obstacles
-mp_potential_path(my_path, obj_goal.x, obj_goal.y, 2, 4, false);
-//start the best path to take
-path_start(my_path, hspd, path_action_stop, true);
+	//Once a threshold is reached, curse the obj
+	if(distance_to_object(obj_tobeCursed) < 5) {
+		obj_tobeCursed.cursed = true;
+	}
+	
+}
+
+//If boogeyman is not cursing
+if(!cursing) {
+	//if goal doesn't exist, create one
+	if(!instance_exists(obj_goal)) {
+		instance_create_layer(x, y, "Instances", obj_goal);
+	}
+	if (instance_place(x, y, obj_wall)) {
+		instance_destroy(obj_goal);
+	}
+		//look up mp_potential_paths in GM documentation for info about the arguments
+		//for the factor argument, the larger the number, the more path ideas the obj can create
+		//path variable for obj_boogeyman
+		var my_path = path_add();
+		//generates potential paths to take based on obstacles
+		mp_potential_path_object(my_path, obj_goal.x, obj_goal.y, 0.5, 5, obj_wall);
+		//start the best path to take
+		path_start(my_path, hspd, path_action_stop, true);
+		//if boogey man reaches goal, destroy it
+		if(instance_place(x,y,obj_goal)) {
+			instance_destroy(obj_goal);
+		}
+}
+
 

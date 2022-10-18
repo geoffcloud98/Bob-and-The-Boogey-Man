@@ -1,26 +1,28 @@
 //Logic for player movement (WASD)
-if(keyboard_check(ord("W"))) {
-vspeed -= 2.5;
-}
-if(keyboard_check(ord("S"))) {
-vspeed += 2.5;
+//up
+if(keyboard_check(ord("W")) and !instance_place(x, y - move_speed, obj_wall)) {
+y -= move_speed;
+}//down
+if(keyboard_check(ord("S")) and !instance_place(x, y + move_speed, obj_wall)) {
+y += move_speed;
 }
 //left
-if(keyboard_check(ord("A")))  {
-x -= 2.5;
+if(keyboard_check(ord("A")) and !instance_place(x - move_speed, y, obj_wall))  {
+x -= move_speed;
 image_xscale = -1;
 }
 //right
-if(keyboard_check(ord("D"))) {
-x += 2.5;
+if(keyboard_check(ord("D")) and !instance_place(x + move_speed, y, obj_wall)) {
+x += move_speed;
 image_xscale = 1;
 }
 //CONSTRAINTS
 
-vspeed = clamp(vspeed, -4, 4);
+//vspeed = clamp(vspeed, -4, 4);
 //Constrain the out of bounds for the player
 x = clamp(x, sprite_width/2, room_width-sprite_width/2);
 y = clamp(y, sprite_height/2, room_height-sprite_height/2);
+
 
 //Logic for deceleration after moving up(arrow keys)
 if(!(keyboard_check(ord("W"))) && !(keyboard_check(ord("S")))) {
@@ -75,4 +77,9 @@ if(secondary_equipped == obj_net) {
 			net_count += -1;
 		}
 	}
+}
+
+//if boogeyman doesnt exist, spawn him in
+if(!instance_exists(obj_Boogeyman)) {
+	instance_create_layer(x,y,"Instances", obj_Boogeyman);	
 }

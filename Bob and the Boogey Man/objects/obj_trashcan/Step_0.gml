@@ -1,10 +1,5 @@
-
-/*
-if cursed = true{
-	// Turn into monster form
-	direction = point_direction(x,y,obj_Bob.x,obj_Bob.y);
+if (cursed = true){
+	//change into evil trash can
+	instance_change(obj_evilTrash, true);
 }
-*/
-
-
 

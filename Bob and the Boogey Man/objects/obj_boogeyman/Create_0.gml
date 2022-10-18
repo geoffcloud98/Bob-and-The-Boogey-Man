@@ -1,8 +1,12 @@
 //On start, spawn at a random point in the map
+x = random_range(0, 1920);
+y = random_range(0, 1080);
 
-//Constrain the out of bounds for the boogeyman
-x = clamp(x, sprite_width/2, room_width-sprite_width/2);
-y = clamp(y, sprite_height/2, room_height-sprite_height/2);
+
+//check if boogeyman spawns inside walls
+if(instance_place(x, y, obj_wall)) {
+	instance_destroy();
+}
 
 
 
