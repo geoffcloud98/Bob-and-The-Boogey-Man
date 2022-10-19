@@ -78,8 +78,3 @@ if(secondary_equipped == obj_net) {
 		}
 	}
 }
-
-//if boogeyman doesnt exist, spawn him in
-if(!instance_exists(obj_Boogeyman)) {
-	instance_create_layer(x,y,"Instances", obj_Boogeyman);	
-}

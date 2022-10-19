@@ -69,6 +69,7 @@
     {"id":{"name":"spr_light_point","path":"sprites/spr_light_point/spr_light_point.yy",},"order":5,},
     {"id":{"name":"light_add_to_world","path":"scripts/light_add_to_world/light_add_to_world.yy",},"order":4,},
     {"id":{"name":"light_maintain_shadow_map","path":"scripts/light_maintain_shadow_map/light_maintain_shadow_map.yy",},"order":2,},
+    {"id":{"name":"obj_boogeyGoalSpawn","path":"objects/obj_boogeyGoalSpawn/obj_boogeyGoalSpawn.yy",},"order":16,},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},"order":15,},
     {"id":{"name":"polygon_from_instance","path":"scripts/polygon_from_instance/polygon_from_instance.yy",},"order":5,},
     {"id":{"name":"draw_shadow_map","path":"scripts/draw_shadow_map/draw_shadow_map.yy",},"order":5,},
