@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_Boogeyman",
   "spriteId": {
-    "name": "spr_pathfinder",
-    "path": "sprites/spr_pathfinder/spr_pathfinder.yy",
+    "name": "spr_boogeyman",
+    "path": "sprites/spr_boogeyman/spr_boogeyman.yy",
   },
   "solid": false,
   "visible": true,
