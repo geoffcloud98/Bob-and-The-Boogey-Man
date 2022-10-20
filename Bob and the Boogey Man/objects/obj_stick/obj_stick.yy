@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_stick",
   "spriteId": {
     "name": "spr_stick",
     "path": "sprites/spr_stick/spr_stick.yy",
@@ -25,19 +28,15 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"damage","path":"objects/obj_sword/obj_sword.yy",},"objectId":{"name":"obj_sword","path":"objects/obj_sword/obj_sword.yy",},"value":"13","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"swing_timer","path":"objects/obj_sword/obj_sword.yy",},"objectId":{"name":"obj_sword","path":"objects/obj_sword/obj_sword.yy",},"value":"room_speed/3","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"damage","path":"objects/obj_sword/obj_sword.yy",},"objectId":{"name":"obj_sword","path":"objects/obj_sword/obj_sword.yy",},"value":"13",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"swing_timer","path":"objects/obj_sword/obj_sword.yy",},"objectId":{"name":"obj_sword","path":"objects/obj_sword/obj_sword.yy",},"value":"room_speed/3",},
   ],
   "parent": {
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_stick",
-  "tags": [],
-  "resourceType": "GMObject",
 }

@@ -18,6 +18,7 @@
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1B9F172F","properties":[],"isDnd":false,"objectId":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":667.0,"y":129.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_60D4802","properties":[],"isDnd":false,"objectId":{"name":"obj_musicObj","path":"objects/obj_musicObj/obj_musicObj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":320.0,"y":64.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"layer_buildings","spriteId":{"name":"spr_buildings","path":"sprites/spr_buildings/spr_buildings.yy",},"colour":4294967295,"x":0,"y":167,"htiled":true,"vtiled":false,"hspeed":-1.0,"vspeed":0.0,"stretch":false,"animationFPS":30.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"layer_assets","assets":[
@@ -31,6 +32,7 @@
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_1B9F172F","path":"rooms/room_start/room_start.yy",},
+    {"name":"inst_60D4802","path":"rooms/room_start/room_start.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

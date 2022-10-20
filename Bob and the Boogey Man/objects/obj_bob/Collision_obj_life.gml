@@ -11,3 +11,5 @@ if(obj_Bob.bob_hp < 100) {
 if(obj_Bob.bob_hp >= 100) {
 	obj_Bob.bob_hp = 100;	
 }
+
+//audio_play_sound(snd_getLife, 2, false)

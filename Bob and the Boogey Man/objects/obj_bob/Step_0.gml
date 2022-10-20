@@ -66,6 +66,7 @@ if (equipped == obj_sword) {
 // if space is pressed, draw sword
 	if (keyboard_check_pressed(vk_space)) {
 		instance_create_layer(x, y, "Instances", obj_sword);
+		audio_play_sound(snd_swingWeapon, 2, false);
 	}
 }
 //if bob is holding stick
@@ -73,6 +74,7 @@ if (equipped == obj_stick) {
 // if space is pressed, draw stick
 	if (keyboard_check_pressed(vk_space)) {
 		instance_create_layer(x, y, "Instances", obj_stick);
+		audio_play_sound(snd_swingWeapon, 2, false);
 	}
 }
 
