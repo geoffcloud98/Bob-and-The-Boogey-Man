@@ -12,14 +12,19 @@ isMoving = true;
 //left
 if(keyboard_check(ord("A")) and !instance_place(x - move_speed, y, obj_wall))  {
 x -= move_speed;
+image_xscale = -1;
 isMoving = true;
 }
 //right
 if(keyboard_check(ord("D")) and !instance_place(x + move_speed, y, obj_wall)) {
 x += move_speed;
+image_xscale = 1;
 isMoving = true;
 }
-
+if(!keyboard_check(ord("W")) and !keyboard_check(ord("A")) and !keyboard_check(ord("S")) and !keyboard_check(ord("D")))
+{
+	image_index = 0;
+}
 
 //CONSTRAINTS
 
@@ -83,5 +88,7 @@ if(secondary_equipped == obj_net) {
 		}
 	}
 }
+
+
 
 show_debug_message(obj_Bob.bob_hp);
