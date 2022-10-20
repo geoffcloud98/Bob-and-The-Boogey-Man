@@ -1,4 +1,9 @@
-
+//check if boogeyman spawns inside walls
+if(instance_exists(obj_Boogeyman)) {
+	if(instance_place(obj_Boogeyman.x, obj_Boogeyman.y, obj_wall)) {
+		instance_destroy(obj_Boogeyman);
+	}
+}
 //if trashcan exists
 var obj_tobeCursed = noone;
 if(instance_exists(obj_trashcan)) {

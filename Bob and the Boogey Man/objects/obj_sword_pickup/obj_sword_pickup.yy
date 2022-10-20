@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_sword_pickup",
   "spriteId": {
     "name": "spr_sword",
     "path": "sprites/spr_sword/spr_sword.yy",
@@ -28,8 +31,4 @@
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_sword_pickup",
-  "tags": [],
-  "resourceType": "GMObject",
 }

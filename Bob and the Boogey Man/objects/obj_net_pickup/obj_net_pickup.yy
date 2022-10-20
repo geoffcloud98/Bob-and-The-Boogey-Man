@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_net_pickup",
   "spriteId": {
     "name": "spr_net",
     "path": "sprites/spr_net/spr_net.yy",
@@ -28,8 +31,4 @@
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_net_pickup",
-  "tags": [],
-  "resourceType": "GMObject",
 }
