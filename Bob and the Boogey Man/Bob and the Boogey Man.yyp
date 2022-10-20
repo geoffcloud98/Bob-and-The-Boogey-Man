@@ -8,6 +8,7 @@
     {"id":{"name":"ext_light_attenuation_init","path":"scripts/ext_light_attenuation_init/ext_light_attenuation_init.yy",},"order":1,},
     {"id":{"name":"ext_light_attenuation_reset","path":"scripts/ext_light_attenuation_reset/ext_light_attenuation_reset.yy",},"order":2,},
     {"id":{"name":"spr_street","path":"sprites/spr_street/spr_street.yy",},"order":2,},
+    {"id":{"name":"obj_visibleHouse","path":"objects/obj_visibleHouse/obj_visibleHouse.yy",},"order":20,},
     {"id":{"name":"light_create_point","path":"scripts/light_create_point/light_create_point.yy",},"order":9,},
     {"id":{"name":"light_add_extension","path":"scripts/light_add_extension/light_add_extension.yy",},"order":1,},
     {"id":{"name":"spr_light_directional","path":"sprites/spr_light_directional/spr_light_directional.yy",},"order":3,},
@@ -74,6 +75,7 @@
     {"id":{"name":"light_add_to_world","path":"scripts/light_add_to_world/light_add_to_world.yy",},"order":4,},
     {"id":{"name":"light_maintain_shadow_map","path":"scripts/light_maintain_shadow_map/light_maintain_shadow_map.yy",},"order":2,},
     {"id":{"name":"obj_boogeyGoalSpawn","path":"objects/obj_boogeyGoalSpawn/obj_boogeyGoalSpawn.yy",},"order":16,},
+    {"id":{"name":"room_gameplay","path":"rooms/room_gameplay/room_gameplay.yy",},"order":1,},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},"order":14,},
     {"id":{"name":"polygon_from_instance","path":"scripts/polygon_from_instance/polygon_from_instance.yy",},"order":5,},
     {"id":{"name":"draw_shadow_map","path":"scripts/draw_shadow_map/draw_shadow_map.yy",},"order":5,},
@@ -121,6 +123,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"room_start","path":"rooms/room_start/room_start.yy",},},
+    {"roomId":{"name":"room_gameplay","path":"rooms/room_gameplay/room_gameplay.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":12,},
