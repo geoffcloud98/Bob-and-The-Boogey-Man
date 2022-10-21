@@ -1,4 +1,6 @@
 //evil trashcan sprite
+//inflictDamage = false;
+
 image_index = 1;
 
 hspeed = move_speed

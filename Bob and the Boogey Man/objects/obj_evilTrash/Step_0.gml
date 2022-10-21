@@ -10,6 +10,11 @@ if object_exists(obj_Bob){
 	}
 }
 
-
+/*
+if inflictDamage = true{
+	obj_Bob.bob_hp -= 20;
+	alarm[0] = 1
+}
+*/
 
 
