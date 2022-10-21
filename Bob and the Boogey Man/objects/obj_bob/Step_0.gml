@@ -48,7 +48,8 @@ if (instance_place(x, y, obj_sword_pickup)) {
 }
 //if bob touches stick pickup, equip stick from the ground
 if(instance_place(x, y, obj_stick_pickup)) {
-	equipped = obj_stick;	
+	secondary_equipped = obj_stick;	
+	stick_count += 5
 }
 //if bob touches net pickup, equip net as the secondary
 if(instance_place(x, y, obj_net_pickup)) {
@@ -56,7 +57,7 @@ if(instance_place(x, y, obj_net_pickup)) {
 	net_count += 2;
 }
 //if number of nets is greater than 0, Bob can throw nets
-if(net_count > 0) {
+if(net_count > 0 or stick_count > 0) {
 	can_shoot = true;
 } else {
 	can_shoot = false;	
@@ -70,11 +71,13 @@ if (equipped == obj_sword) {
 	}
 }
 //if bob is holding stick
-if (equipped == obj_stick) {
-// if space is pressed, draw stick
-	if (keyboard_check_pressed(vk_space)) {
-		instance_create_layer(x, y, "Instances", obj_stick);
-		audio_play_sound(snd_swingWeapon, 2, false);
+if (secondary_equipped == obj_stick) {
+	if(can_shoot) {
+// if Z is pressed, throw stick
+		if (keyboard_check_pressed(ord("Z"))) {
+			instance_create_layer(x, y, "Instances", obj_stick);
+			stick_count += -1;
+		}
 	}
 }
 

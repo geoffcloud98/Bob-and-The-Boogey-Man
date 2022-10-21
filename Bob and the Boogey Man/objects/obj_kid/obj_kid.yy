@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_kid",
   "spriteId": {
-    "name": "spr_kid",
-    "path": "sprites/spr_kid/spr_kid.yy",
+    "name": "spr_child",
+    "path": "sprites/spr_child/spr_child.yy",
   },
   "solid": false,
   "visible": true,

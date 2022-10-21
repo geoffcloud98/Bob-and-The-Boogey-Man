@@ -4,6 +4,7 @@ if(!isFree) {
 }
 //if kid is free, go home
 if(isFree) {
+	
 	kid_speed = 5;
 //find closest house to kid
 var closest_house = instance_nearest(x, y, obj_house);

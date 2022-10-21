@@ -3,10 +3,10 @@
   "resourceVersion": "1.0",
   "name": "obj_evilTrash",
   "spriteId": {
-    "name": "spr_trashcan",
-    "path": "sprites/spr_trashcan/spr_trashcan.yy",
+    "name": "spr_trashevil",
+    "path": "sprites/spr_trashevil/spr_trashevil.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,

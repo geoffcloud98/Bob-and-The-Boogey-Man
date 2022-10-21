@@ -16,9 +16,21 @@ if(instance_exists(obj_trashcan)) {
 		cursing = false;
 	}
 }
+else if(instance_exists(obj_bush)) {
+	//hold id of the closest obj_trashcan
+	var obj_tobeCursed = instance_nearest(x, y, obj_bush);
+	//if closest obj is within curse range and is not cursed
+	if(distance_to_object(obj_tobeCursed) < curse_range and obj_tobeCursed.cursed == false) {
+		cursing = true;
+	} else {
+		cursing = false;
+	}
+}
 
 //if boogeyman is cursing, go to a random obj and curse it
 if(cursing) {
+
+	
 	//path variable for boogeyman
 	var curse_path = path_add();
 	//make potential paths to the obj to be cursed
@@ -36,7 +48,6 @@ if(cursing) {
 mp_potential_settings(45,10,10, true);
 //If boogeyman is not cursing
 if(!cursing) {
-	
 		if(instance_exists(obj_goal)){
 			//for the factor argument, the larger the number, the more path ideas the obj can create
 			//path variable for obj_boogeyman

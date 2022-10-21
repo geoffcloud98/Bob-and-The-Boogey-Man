@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_stick_pickup",
   "spriteId": {
-    "name": "spr_stick",
-    "path": "sprites/spr_stick/spr_stick.yy",
+    "name": "spr_stickPickup",
+    "path": "sprites/spr_stickPickup/spr_stickPickup.yy",
   },
   "solid": false,
   "visible": true,
