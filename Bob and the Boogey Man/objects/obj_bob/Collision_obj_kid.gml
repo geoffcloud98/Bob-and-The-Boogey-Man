@@ -2,3 +2,4 @@
 var kidtobeFreed = instance_nearest(x, y, obj_kid);
 kidtobeFreed.isFree = true;
 
+score += 10;
