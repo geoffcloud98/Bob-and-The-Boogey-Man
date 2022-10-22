@@ -1,3 +1,14 @@
+// Set inflictDamage back to false
+if (inflictDamage = true){
+	//call an alarm to set it back to false
+	alarm[0] = 1
+}
+
+if (damagedBob = true){
+	//(Call shader to turn Bob red for an instant)
+	alarm[1] = 1
+}
+
 //Logic for player movement (WASD)
 //up
 if(keyboard_check(ord("W")) and !instance_place(x, y - move_speed, obj_wall)) {
@@ -95,5 +106,10 @@ if(secondary_equipped == obj_net) {
 }
 
 
+if bob_hp <= 0{
+	var stopMusic = audio_play_sound(snd_backgroundMusic, 1, false); 
+	audio_sound_gain(stopMusic, 0, 0);
+	instance_create_layer(x, y, "Instances", obj_lose);
+}
 
 show_debug_message(obj_Bob.bob_hp);
