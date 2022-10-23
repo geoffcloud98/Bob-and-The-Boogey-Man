@@ -1,5 +1,7 @@
 hspeed = hspd;
-image_xscale = obj_Bob.image_xscale;
+image_xscale = 0.05;
+image_yscale = 0.05;
+image_angle = 90;
 
 
 //if bob is facing left, move left

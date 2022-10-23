@@ -1,3 +1,4 @@
+
 //start patrol route
 
 //var path_toPlayer = path_add();
@@ -15,13 +16,5 @@ if(obj_Boogeyman.trapped == true) {
 //turn back to trashcan
 if(cursed == false) {
 	move_speed = 0;
-	instance_change(obj_trashcan, true);
+	instance_change(obj_bush, true);
 }
-/*
-if inflictDamage = true{
-	obj_Bob.bob_hp -= 20;
-	alarm[0] = 1
-}
-*/
-
-

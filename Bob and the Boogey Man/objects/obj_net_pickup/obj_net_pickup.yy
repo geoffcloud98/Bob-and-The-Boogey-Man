@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_net_pickup",
   "spriteId": {
-    "name": "spr_net",
-    "path": "sprites/spr_net/spr_net.yy",
+    "name": "spr_net1",
+    "path": "sprites/spr_net1/spr_net1.yy",
   },
   "solid": false,
   "visible": true,

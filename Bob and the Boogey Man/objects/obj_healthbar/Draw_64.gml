@@ -23,3 +23,4 @@ switch (obj_Bob.bob_hp)
 	case 0: draw_sprite(spr_health0, 0, 20, 20);
 	break;
 }
+

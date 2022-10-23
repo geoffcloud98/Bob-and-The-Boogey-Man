@@ -3,7 +3,7 @@
 if(obj_Bob.bob_hp < 100) {
 	instance_destroy(other);
 	
-	obj_Bob.bob_hp += 25;
+	obj_Bob.bob_hp += 20;
 } 
 
 //if bobs hp is greater or equal to 100, don't pick it up. 
