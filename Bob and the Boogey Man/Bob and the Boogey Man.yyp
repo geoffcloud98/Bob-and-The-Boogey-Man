@@ -111,7 +111,7 @@
     {"id":{"name":"polygon_create","path":"scripts/polygon_create/polygon_create.yy",},"order":4,},
     {"id":{"name":"spr_boogeyman","path":"sprites/spr_boogeyman/spr_boogeyman.yy",},"order":16,},
     {"id":{"name":"obj_scoreboard","path":"objects/obj_scoreboard/obj_scoreboard.yy",},"order":27,},
-    {"id":{"name":"obj_timer","path":"objects/obj_timer/obj_timer.yy",},"order":29,},
+    {"id":{"name":"obj_clock","path":"objects/obj_clock/obj_clock.yy",},"order":29,},
     {"id":{"name":"obj_goal","path":"objects/obj_goal/obj_goal.yy",},"order":13,},
     {"id":{"name":"lighting_get_active_camera","path":"scripts/lighting_get_active_camera/lighting_get_active_camera.yy",},"order":2,},
     {"id":{"name":"light_trace_polygon","path":"scripts/light_trace_polygon/light_trace_polygon.yy",},"order":3,},
