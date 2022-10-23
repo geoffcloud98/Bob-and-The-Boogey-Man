@@ -1,12 +1,12 @@
 // Set inflictDamage back to false
-if (inflictDamage = true){
+if (inflictDamage == true) and (alarm[0] == -1){
 	//call an alarm to set it back to false
-	alarm[0] = 1
+	alarm[0] = 60
 }
 
-if (damagedBob = true){
+if (damagedBob == true) and (alarm[1] == -1){
 	//(Call shader to turn Bob red for an instant)
-	alarm[1] = 1
+	alarm[1] = 60
 }
 
 //Logic for player movement (WASD)
@@ -106,7 +106,7 @@ if(secondary_equipped == obj_net) {
 }
 
 
-if bob_hp <= 0{
+if bob_hp <= 0 and !instance_exists(obj_lose){
 	var stopMusic = audio_play_sound(snd_backgroundMusic, 1, false); 
 	audio_sound_gain(stopMusic, 0, 0);
 	instance_create_layer(x, y, "Instances", obj_lose);

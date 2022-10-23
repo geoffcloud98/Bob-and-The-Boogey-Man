@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_timeline",
+  "name": "obj_timer",
   "spriteId": null,
   "solid": false,
   "visible": true,
