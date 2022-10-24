@@ -1,12 +1,12 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_sword_pickup",
+  "name": "obj_tree",
   "spriteId": {
-    "name": "spr_swordPickup",
-    "path": "sprites/spr_swordPickup/spr_swordPickup.yy",
+    "name": "spr_tree",
+    "path": "sprites/spr_tree/spr_tree.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,

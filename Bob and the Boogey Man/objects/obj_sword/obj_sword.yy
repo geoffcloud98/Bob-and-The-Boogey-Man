@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_sword",
   "spriteId": {
-    "name": "spr_sword",
-    "path": "sprites/spr_sword/spr_sword.yy",
+    "name": "spr_swordPickup",
+    "path": "sprites/spr_swordPickup/spr_swordPickup.yy",
   },
   "solid": false,
   "visible": true,

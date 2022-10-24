@@ -105,11 +105,18 @@ if(secondary_equipped == obj_net) {
 	}
 }
 
-
 if bob_hp <= 0 and !instance_exists(obj_lose){
 	var stopMusic = audio_play_sound(snd_backgroundMusic, 1, false); 
 	audio_sound_gain(stopMusic, 0, 0);
 	instance_create_layer(x, y, "Instances", obj_lose);
 }
+
+/* Canceled switch statement for timeline
+switch (time)
+{
+	case a:
+		
+}
+*/
 
 show_debug_message(obj_Bob.bob_hp);

@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_sword_pickup",
+  "name": "obj_lightpole",
   "spriteId": {
-    "name": "spr_swordPickup",
-    "path": "sprites/spr_swordPickup/spr_swordPickup.yy",
+    "name": "spr_lightpole",
+    "path": "sprites/spr_lightpole/spr_lightpole.yy",
   },
   "solid": false,
   "visible": true,

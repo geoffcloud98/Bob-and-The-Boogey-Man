@@ -6,7 +6,7 @@
     "name": "spr_trashcan",
     "path": "sprites/spr_trashcan/spr_trashcan.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
